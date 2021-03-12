@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "express backend for typesafe apollo example",
+  "main": "src/index.ts",
+  "author": "Kieron McKenna",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "2.18.0",
+    "apollo-server": "^2.21.1",
+    "apollo-server-express": "^2.21.1",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.21.2",
+    "@graphql-codegen/typescript": "1.21.1",
+    "@graphql-codegen/typescript-resolvers": "1.19.0",
+    "nodemon": "^2.0.7",
+    "prisma": "2.18.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "generate": "graphql-codegen --config codegen.yml",
+    "start": "nodemon src/index.ts"
+  }
+}

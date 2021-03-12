@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "outDir": "dist",
+    "lib": ["es2018"],
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "pretty": true,
+    "strict": false
+  },
+  "include": [
+    "src/**/*.ts", "src/admin/modules/admin/account",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
